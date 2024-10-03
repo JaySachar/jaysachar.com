@@ -1,0 +1,62 @@
+/* Font-Face Declarations */
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins-Thin.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+html, body {
+    background: radial-gradient(circle, #FFF0F1, #FFFFFF);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(145, 143, 143);
+    width: 45vw;
+    height: 25vw;
+    border: 2px solid #555; /* Optional border for visibility */
+}
+
+.box{
+    float: left;
+    height: 15%;
+    width: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border: 2px solid blue;
+    background-color: blue;
+    position: relative;
+
+}
+
+.balls{
+    float: left;
+    height: 4.5%;
+    width: 2.5%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    position: relative;
+    
+}
+.border{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    float: top;
+    height: 7.5%;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+}
+

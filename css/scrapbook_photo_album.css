@@ -1,27 +1,6 @@
 /* Font-Face Declarations */
 @font-face {
     font-family: "Poppins";
-    src: url("./fonts/Poppins-Regular.ttf");
-    font-weight: 400; /* Regular weight */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url("./fonts/Poppins-SemiBold.ttf");
-    font-weight: 600; /* Bold weight */
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url("./fonts/Poppins-ExtraBold.ttf");
-    font-weight: bolder;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Poppins";
     src: url("./fonts/Poppins-Thin.ttf");
     font-weight: lighter;
     font-style: normal;
@@ -33,57 +12,4 @@ body {
     width: 100vw;
     margin: 0;
 
-}
-
-ul{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-.name {
-    color: black;
-    font-family: Comic Sans MS;
-    font-size: 32px;
-    font-style: oblique;
-}
-
-.menu {
-    font-family: "Poppins";
-    font-weight: 600;
-    color: black;
-    display: flex;
-    align-items: center;
-}
-.menu li{
-    margin-left: 30px;
-    font-size: 18px;
-}
-
-.menu a{
-    color: black;
-    text-decoration: none;
-}
-
-#Games a{
-    color: white;
-    margin-left: 0%;
-    border-radius: 25px;
-    background: #2349FF;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 30px;
-    width: 100%;
-}
-
-h1 {
-    position: relative;
-    text-align: center;
 }
