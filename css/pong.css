@@ -25,17 +25,17 @@ html, body {
     width: 45vw;
     height: 25vw;
     border: 2px solid #555; /* Optional border for visibility */
+    position: relative; /* Make gameArea the relative parent for absolute positioning */
+
 }
 
-.box{
+.paddle{
     float: left;
     height: 15%;
-    width: 1%;
-    margin-left: 1%;
-    margin-top: 1%;
-    border: 2px solid blue;
+    width: 2%;
+
     background-color: blue;
-    position: relative;
+    position: absolute;
 
 }
 
@@ -49,14 +49,28 @@ html, body {
     
 }
 .border{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    float: top;
+    position: absolute;
     height: 7.5%;
     width: 100%;
     background-color: gray;
-    position: relative;
 }
 
+/* belongs at the top of game area */
+#topBorder{
+    top: 0;
+}
+
+/* belongs at the bottom of game area*/
+#bottomBorder{
+    bottom: 0;
+}
+
+#player1{
+    bottom: 45%;
+    right: 0;
+}
+
+#player2{
+    bottom: 45%;
+    left: 0;
+}
