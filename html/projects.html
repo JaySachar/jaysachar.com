@@ -5,13 +5,13 @@
     <meta name="author;" content="Jay Sachar">
     <meta name="description" content="Things I learn as I try to create with HTML">
     <link rel="stylesheet" href="../css/projects.css">
-    <meta name="viewport" content="width-style-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title>projects and stuff</title>
 </head>
 
 <body>
     <!--Add a unorganized list for the top of the page with links to other pages (categories, articles, and about)-->
-    <ul style="margin: 60px;">
+    <ul class = "nav_bar", style="margin: 20px;">
         <li class="name">Jaydeep Sachar</li>
         <div class="menu">
             <li><a href="home.html">Home</a></li>
@@ -20,8 +20,43 @@
             <li id="Games"><a href="games.html">Games</a></li>
         </div>
     </ul>
-    
-    <h1>Hey, I'm Jay</h1>
 
+
+    <div class="filter_button">
+        <button data-filter="Systems">Systems</button>
+        <button data-filter="Electrical">Electrical</button>
+        <button data-filter="Software">Software</button>
+        <button data-filter="Mechanical">Mechanical</button>
+    </div>
+        <section class = "projects_grid">
+            <article class = "project" data-category="Systems/Mechanical/Electrical">
+                <h2> Project 1: Hello World </h2>
+                <div class="project-info">
+                    <p>Tech Stack: HTML, CSS, JavaScript</p>
+                </div>
+            </article>
+            
+            <article class = "project" data-category="Mechanical">
+                <h2>Project 2: Hello Again </h2>
+                <div class="project-info">
+                    <p>Tech Stack: HTML, CSS, JavaScript</p>
+                </div>
+            </article>
+
+            <article class = "project" data-category="Electrical">
+                <h2> Project 3: Hello World </h2>
+                <div class="project-info">
+                    <p>Tech Stack: HTML, CSS, JavaScript</p>
+                </div>
+            </article>
+            
+            <article class = "project" data-category="Software">
+                <h2>Project 4: Hello Again </h2>
+                <div class="project-info">
+                    <p>Tech Stack: HTML, CSS, JavaScript</p>
+                </div>
+            </article>
+    </section>
+<script src="../javascript/projects.js"> </script>
 </body>
 </html>

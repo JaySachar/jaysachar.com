@@ -27,15 +27,17 @@
     font-style: normal;
 }
 
-body {
+html, body {
     background: radial-gradient(circle, #FFF0F1, #FFFFFF);
-    height: 100vw;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     margin: 0;
-
+    padding: 0;
+    overflow: auto;
+    box-sizing: border-box;
 }
 
-ul{
+.nav_bar{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -86,4 +88,86 @@ ul{
 h1 {
     position: relative;
     text-align: center;
+}
+
+.projects_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    max-width: 80%; /* Adjust max width as needed */
+    margin: 0 auto;
+    padding: 20px; /* Add padding for spacing around the grid */
+}
+
+.project {
+    position: relative; /* Keep relative positioning for child absolute elements */
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 15px;
+    margin-top: 30px;
+    text-align: center;
+    transition-duration: 0.5s;
+    overflow: hidden; /* Ensure child elements do not overflow */
+    width: 250px;
+}
+
+.project-info {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position it absolutely within .project */
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    border-radius: 15px; /* Match the card's border radius */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+/* Show .project-info on hover */
+.project:hover .project-info {
+    display: flex; /* Change to block to show text as normal */
+    opacity: 1; /* Fade in effect */
+}
+
+h2{
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.filter_button{
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter_button button{
+    border: none;
+    color: white;
+    background-color: #04aa2eb9; /* Green */
+
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 25px;
+    transition-duration: 0.4s;
+}
+
+.filter_button button:hover {
+    background-color: #333; /* Light Blue */
+    color: #04aa2eb9;
+}
+
+.filter_button button.active {
+    background-color: #333;
+    color: #04aa2eb9;
 }
