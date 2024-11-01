@@ -29,33 +29,147 @@
         <button data-filter="Mechanical">Mechanical</button>
     </div>
         <section class = "projects_grid">
-            <article class = "project" data-category="Systems/Mechanical/Electrical">
-                <h2> Project 1: Hello World </h2>
+            <article class = "project" data-category="Mechanical/Software">
+                <h2> Automobile Hood Latch Modelling</h2>
+                <img src="../images/hoodlatch_image.png" alt = "Isometric Exploded View of the Hoodlatch we constructed">
+                <ul>
+                    <li>Animated and designed working model of a hood latch for an automobile</li>
+                    <li>Used a quarter-car model with State-Space analysis to retrieve the expected forces on the latch when going over speedbumps</li>
+                    <li>Conducted fatigue analysis, frequency analysis, and all other forces on the hood latch to ensure it does not fail.</li>
+                </ul>
                 <div class="project-info">
-                    <p>Tech Stack: HTML, CSS, JavaScript</p>
-                </div>
-            </article>
-            
-            <article class = "project" data-category="Mechanical">
-                <h2>Project 2: Hello Again </h2>
-                <div class="project-info">
-                    <p>Tech Stack: HTML, CSS, JavaScript</p>
-                </div>
-            </article>
-
-            <article class = "project" data-category="Electrical">
-                <h2> Project 3: Hello World </h2>
-                <div class="project-info">
-                    <p>Tech Stack: HTML, CSS, JavaScript</p>
+                    <p>Softwares used:</p>
+                    <ul>
+                        <li>SOLIDWORKS</li>
+                        <li>MATLAB</li>
+                    </ul>
+                    <img src="../images/backside_hood_latch_gif.gif" alt="gif of the back of the hoodlatch" height="175px">
+                    <img src="../images/frontside_hood_latch_gif.gif" alt="gif of the back of the hoodlatch" height="175px">
                 </div>
             </article>
             
             <article class = "project" data-category="Software">
-                <h2>Project 4: Hello Again </h2>
+                <h2>Digital and Analog Filter Designer</h2>
+                <img src="../images/audio_filter_designer.png" alt = "An overview of the app created in Matlab App Designer" height="200px">
+                <ul>
+                    <li>Produced a Fast Fourier Transform function using the recursive Cooley-Tukey algorithm to process larger data sets to achieve the desired O(nlogn) time complexity using a radix-2</li>
+                    <li>Implemented a Windowed-Sinc filter to achieve the desired frequency bands with exceptional roll-off</li>
+                    <li>Allowed users to apply their desired cutoff frequencies and digital bandwidth with numerous types of windows (Blackman Harris, Rectangular, Hamming, Kaiser)</li>
+                </ul>
                 <div class="project-info">
-                    <p>Tech Stack: HTML, CSS, JavaScript</p>
+                    <p>Software Used:</p>
+                    <ul>
+                        <li>MATLAB</li>
+                        <li>MATLAB App Designer</li>
+                    </ul>
+                    <img src="../images/Matlab_FilterDesigner_App_Demo.gif" alt="Gif showing the use of the application" width="800px">
+                    <a href="https://github.com/JaySachar/FilterDesigner">Github Link</a> </a>
                 </div>
             </article>
+
+            <article class = "project" data-category="Systems/Software">
+                <h2>Active Suspension Tuned on a Half-Car Model</h2>
+                <img src="../images/half-car_model.png" alt="Diagram of a half-car model" height="225px">
+                <ul>
+                    <li>Tested and tuned active suspension with a PID and a fuzzy logic controller on ISO8608 Road Profile</li>
+                    <li>Tuned a PID controller using the Ziegler-Nichols method to minimize displacement and ensure high rider comfort</li>
+                    <li>Created a Simulink model to determine the resulting outputs and displacements from the two controllers</li>
+                </ul>
+                <div class="project-info">
+                    <p>Software Used:</p>
+                    <ul>
+                        <li>MATLAB</li>
+                        <li>MATLAB Simulink</li>
+                    </ul>
+                    <img src="../images/half-car-model_results.png" alt="Results from integrating different types of controllers on ISO8608's roughest option" height="325px">
+                    <a href="https://github.com/JaySachar/MSE380-Project">Github Link</a>
+                </div>
+            </article>
+            
+            <article class = "project" data-category="Software/Systems">
+                <h2>Speed Control of a BLDC Computer Fan</h2>
+                <img src="../images/BLDC_Fan_Motor.png" alt="Image showing the completed circuit and 7-segment LEDs" height="225px">
+                <ul>
+                    <li>Constructed a circuit with a BJT, 7-segment displays, and 8051 microcontroller to control a BLDC computer motor with a modifiable PWM signal</li>
+                    <li>Programmed in C to develop the PWM signal using the integrated timers found in the 8051, to ensure the best performance</li>
+                    <li>Calculated the current RPM of the fan using the hall sensor, and the second timer on the 8051, displaying it on the four 7-segmant displays used</li>
+                </ul>
+                <div class="project-info">
+                    <p>Software and Tools Used:</p>
+                    <ul>
+                        <li>Embedded C</li>
+                        <li>Proteus</li>
+                        <li>Osciliscope</li>
+                        <li>Power Supply</li>
+                    </ul>                
+                    <img src="../images/bldc_fan_motor_schematic.PNG" alt="Proteus schematic of the circuitry" height="275px">
+                    <a href="https://github.com/JaySachar/MSE352-Project">Github Link</a>
+                </div>
+            </article>
+
+            <article class = "project" data-category="Software/Electrical/Systems">
+                <h2>1-DOF Pick & Place Robot</h2>
+                <img src="../images/BLDC_Fan_Motor.png" alt="Image of the 1DOF Pick and Place Robot" height="225px">
+                <ul>
+                    <li>Developed a Proportional-Integral (PI) control system in Embedded C on Tiva C, enabling accurate control of the robot’s single degree of freedom, with minimal error.</li>
+                    <li>Implemented UART for a user-friendly, interactive interface, enhancing usability for diverse applications.</li>
+                    <li>Directed system architecture and defined requirements to ensure efficient project workflow implementing a state machine.</li>
+                </ul>
+                <div class="project-info">
+                    <p>Software and Tools Used:</p>
+                    <ul>
+                        <li>Embedded C</li>
+                        <li>Tiva C with a QEI and PWM Generators</li>
+                        <li>Multimeter</li>
+                    </ul>                
+                    <img src="../images/bldc_fan_motor_schematic.PNG" alt="Proteus schematic of the circuitry" height="275px">
+                    <a href="https://github.com/JaySachar/1DOF_ROBOT/tree/main/1DOF_Final_Project">Github Link</a>
+                </div>
+            </article>
+
+            <article class = "project" data-category="Software/Systems">
+                <h2>Speed Control of a BLDC Computer Fan</h2>
+                <img src="../images/BLDC_Fan_Motor.png" alt="Image showing the completed circuit and 7-segment LEDs" height="225px">
+                <ul>
+                    <li>Constructed a circuit with a BJT, 7-segment displays, and 8051 microcontroller to control a BLDC computer motor with a modifiable PWM signal</li>
+                    <li>Programmed in C to develop the PWM signal using the integrated timers found in the 8051, to ensure the best performance</li>
+                    <li>Calculated the current RPM of the fan using the hall sensor, and the second timer on the 8051, displaying it on the four 7-segmant displays used</li>
+                </ul>
+                <div class="project-info">
+                    <p>Software and Tools Used:</p>
+                    <ul>
+                        <li>Embedded C</li>
+                        <li>Proteus</li>
+                        <li>Osciliscope</li>
+                        <li>Power Supply</li>
+                    </ul>                
+                    <img src="../images/bldc_fan_motor_schematic.PNG" alt="Proteus schematic of the circuitry" height="275px">
+                    <a href="https://github.com/JaySachar/MSE352-Project">Github Link</a>
+                </div>
+            </article>
+
+            <article class = "project" data-category="Software/Systems">
+                <h2>Speed Control of a BLDC Computer Fan</h2>
+                <img src="../images/BLDC_Fan_Motor.png" alt="Image showing the completed circuit and 7-segment LEDs" height="225px">
+                <ul>
+                    <li>Constructed a circuit with a BJT, 7-segment displays, and 8051 microcontroller to control a BLDC computer motor with a modifiable PWM signal</li>
+                    <li>Programmed in C to develop the PWM signal using the integrated timers found in the 8051, to ensure the best performance</li>
+                    <li>Calculated the current RPM of the fan using the hall sensor, and the second timer on the 8051, displaying it on the four 7-segmant displays used</li>
+                </ul>
+                <div class="project-info">
+                    <p>Software and Tools Used:</p>
+                    <ul>
+                        <li>Embedded C</li>
+                        <li>Proteus</li>
+                        <li>Osciliscope</li>
+                        <li>Power Supply</li>
+                    </ul>                
+                    <img src="../images/bldc_fan_motor_schematic.PNG" alt="Proteus schematic of the circuitry" height="275px">
+                    <a href="https://github.com/JaySachar/MSE352-Project">Github Link</a>
+                </div>
+            </article>
+
+
     </section>
 <script src="../javascript/projects.js"> </script>
 </body>

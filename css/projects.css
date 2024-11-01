@@ -28,7 +28,7 @@
 }
 
 html, body {
-    background: radial-gradient(circle, #FFF0F1, #FFFFFF);
+    background: radial-gradient(circle, #f3f3f3, #FFFFFF);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -110,26 +110,73 @@ h1 {
     text-align: center;
     transition-duration: 0.5s;
     overflow: hidden; /* Ensure child elements do not overflow */
-    width: 250px;
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
 }
 
+.project img{
+    max-width: 300px;
+    border: black;
+    border-width: 5px;
+}
+
+.project ul {
+    list-style-type:circle; /* Remove bullet points */
+    padding: 15px;
+    margin: 0;
+    text-align: justify; /* Align text to the left */
+}
+
+.project li {
+    font-family: "Poppins";
+    font-size: 15px;
+    margin-bottom: 5px; /* Space between list items */
+}
 .project-info {
-    display: none; /* Hidden by default */
-    position: absolute; /* Position it absolutely within .project */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    position: absolute;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 10px;
-    width: 100%; /* Full width of the parent */
-    height: 100%; /* Full height of the parent */
-    border-radius: 15px; /* Match the card's border radius */
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
     opacity: 0;
     transition: opacity 0.3s ease;
     font-family: "Poppins";
     font-weight: 400;
+    overflow-y: auto;
 }
 
+.project-info img {
+    display: block;
+    max-width: 90%; /* Adjust as needed */
+    margin-right: 3%;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Optional for rounded corners */
+}
+.project-info ul {
+    list-style-type: disc; /* Add bullet points */
+    padding-left: 20px; /* Indent for better alignment */
+    margin: 0;
+    text-align: center; /* Align list items to the left */
+}
+
+.project-info li {
+    font-family: "Poppins";
+    font-size: 15px;
+    line-height: 1.5; /* Improve readability with spacing */
+    color: #fff; /* Ensure contrast with background */
+}
+
+.project a {
+    color: white;
+}
 /* Show .project-info on hover */
 .project:hover .project-info {
     display: flex; /* Change to block to show text as normal */
