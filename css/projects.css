@@ -27,6 +27,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Jokerman";
+    src: url("./fonts/Jokerman.otf");
+    font-weight:normal;
+    font-style: normal;
+}
+/* Applicable to all pages  */
+
 html, body {
     background: radial-gradient(circle, #f3f3f3, #FFFFFF);
     height: 100%;
@@ -34,6 +42,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: auto;
+    scrollbar-width: thin;
     box-sizing: border-box;
 }
 
@@ -50,7 +59,7 @@ html, body {
 
 .name {
     color: black;
-    font-family: Comic Sans MS;
+    font-family: Jokerman;
     font-size: 32px;
     font-style: oblique;
 }
@@ -89,6 +98,9 @@ h1 {
     position: relative;
     text-align: center;
 }
+
+/* Everything below is not general */
+
 
 .projects_grid {
     display: flex;
