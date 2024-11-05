@@ -1,0 +1,30 @@
+/* Font-Face Declarations */
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins-Thin.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+html, body {
+    background: radial-gradient(circle, #FFF0F1, #FFFFFF);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(145, 143, 143);
+    width: 45vw;
+    height: 25vw;
+    border: 2px solid #555; /* Optional border for visibility */
+    position: relative; /* Make gameArea the relative parent for absolute positioning */
+}
+

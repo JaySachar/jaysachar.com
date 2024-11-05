@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="../css/photos.css">
     <meta name="viewport" content="width-style-width, initial-scale-1.0">
     <title>photos and stuff</title>
+    <script src="https://cdn.rawgit.com/meganz/MEGASync/master/mega.js"></script>
+
 </head>
 
 <body>
     <!--Add a unorganized list for the top of the page with links to other pages (categories, articles, and about)-->
+<<<<<<< HEAD
     <ul class = "nav_bar", style="margin: 20px;">
+=======
+    <ul class="header" style="margin: 60px;">
+>>>>>>> cc5d8cee3782891b1dd4dfd3210c7b0b09897117
         <li class="name">Jaydeep Sachar</li>
         <div class="menu">
             <li><a href="home.html">Home</a></li>
@@ -20,6 +26,12 @@
             <li id="Games"><a href="games.html">Games</a></li>
         </div>
     </ul>
-    
+    <ul class="wrapper">
+        <li><input id="photoUpload" type="file" class="butt" style="display:none;" />
+        <input type="button" value="Upload Photos" class ="butt" onclick="document.getElementById('photoUpload').click();" /></li>
+        
+        <li><input id="photoDownload" type="file" class="butt" style="display:none;" />
+        <input type="button" value="Download Selected Photos" class ="butt" onclick="document.getElementById('photoDownload').click();" /></li>
+    </ul>
 </body>
 </html>

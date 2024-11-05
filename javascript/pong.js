@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const bottomBorder = document.getElementById("bottomBorder");
     const gameArea = document.getElementById("gameArea");
 
-    // const maxPaddleY = gameArea. 
-    // const minPaddleY =
-    // Initialize positions and velocities
+
     let ballPos = {x: 0, y: 0};
     let ballVel = {x:5, y:10};
     let player1Pos = player1.getBoundingClientRect();
@@ -127,27 +125,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
-
-
-/* 
-Lets think about pong. I think initially, i can set up the position
-of the paddles, the ball, and the borders
-
-
-updated at each frame: 
-A function for ball_position that takes current ball position,
-the velocity of it is travelling at, and determines the new position
-based on velocity*time between frames = new positon
-<x_prev, y_prev> + <x_vel*time, y_vel*time> = <x_new, y_new>
-
-
-Once i have that, i can take user input for moving the paddle 
----> one function for updating the paddle position
----> gets current position, gets current keyboard input,
----> keyboard input * multiplier = new position
-
-
-
-
-*/
