@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="author;" content="Jay Sachar">
+    <meta name="description" content="Things I learn as I try to create with HTML">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/general_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>home and stuff</title>
+</head>
+
+<body>
+    <!--Add a unorganized list for the top of the page with links to other pages (categories, articles, and about)-->
+    <ul class = "nav_bar", style="margin: 20px;">
+        <li class="name">Jaydeep Sachar</li>
+        <div class="menu">
+            <li><a href="html/home.html">Home</a></li>
+            <li><a href="html/projects.html">Projects</a></li>
+            <li><a href="html/photos.html">Photos</a></li>
+            <li id="Games"><a href="html/games.html">Games</a></li>
+        </div>
+    </ul>
+    
+    <h1>Hey, I'm Jay</h1>
+    <h2>A recent Mechatronic Systems Engineering graduate,<br> passionate about sustainability and technology <br> and this is a WIP lol</h2>
+    
+    <a href="scrapbook_photo_album.html">
+        <img id = "secret_img" src="images/secret_button_image.JPG" alt="Super secret button why you lookin here?" width="10px" height="10px">
+    </a>
+
+    <script>
+        var secret_img = document.getElementById("secret_img");
+
+        function positionImage() {
+            secret_img.style.position = 'fixed';  // Fix image relative to viewport
+            secret_img.style.left = '0';          // Left aligned to 0px
+            secret_img.style.bottom = '0';        // Align to the bottom of the window
+        }
+
+
+        // Call the function when the image is fully loaded
+        secret_img.onload = positionImage;
+
+        // Ensure it's repositioned on window resize as well
+        window.onresize = positionImage;
+    
+    </script>
+</body>
+</html>
